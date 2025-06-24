@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.glow-effect {
+    z-index: 10;
+    pointer-events: none;
+    display: flex;
+    margin-left: 11rem;
+    position: absolute;
+    gap: 50rem;
+}
+.box {
+    height: 589px;
+    width: 96px;
+    background: #B837EF;
+    margin-top: 5rem;
+    filter: blur(115px);
+}
+.main {
+    height: 1024px;
+    width: 100%;
+    background-image: url(2\ Websit\ BG.jpg);
+    background-size: cover;
+    position: relative;
+    /* z-index: 10; */
+}
+.nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem;
+
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+.content li {
+    list-style: none;
+}
+.content li a {
+    color: #fff;
+    text-decoration: none;
+}
+.logo {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo span {
+    color: #7879BE;
+}
+/* ================================navber================================= */
+.text h1 {
+    color: #fff;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-size: 150px;
+    font-style: normal;
+    padding-top: 2rem;
+    background: linear-gradient(to right, #666666, #ffffff, #666666);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: slideFromLeft 1.5s ease-out forwards;
+    opacity: 0;
+    animation: slideFromLeft 1.7s ease-in-out forwards;
+}
+.text h2 {
+    color: #C29AD3;
+    text-align: center;
+    font-family: "Fustat", sans-serif;
+    font-size: 150px;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: -2.6rem;
+
+    animation: slideFromRight 1.5s ease-out forwards;
+    opacity: 0;
+    animation: slideFromRight 1.7s ease-in-out forwards;
+}
+.p-text p {
+    color: #D0D0D0;
+    text-align: center;
+    font-family: "Prociono", serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: normal;
+}
+/* Common Slide from Bottom */
+.slide-line {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+/* Delay for each line */
+.delay-1 {
+  animation-delay: 0.2s;
+}
+.delay-2 {
+  animation-delay: 0.5s;
+}
+.delay-3 {
+  animation-delay: 0.8s;
+}
+
+
+.button-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.big-btn {
+    width: 506.09px;
+    height: 145.25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px); /* for Safari */
+    border: 1.7px solid rgba(255, 255, 255, 1);
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.small-btn {
+    width: 434px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px); /* for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn-1{
+    height: 56px;
+    width: 178px;
+    background: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 100px;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.btn-1 li {
+    list-style: none;
+}
+.btn-1 li a{
+    text-decoration: none;
+    color: #fff;
+}
+.btn-2{
+    height: 56px;
+    width: 178px;
+    background: white;
+    color: #1a1a1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 100px;
+    font-weight: 650;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.btn-2 li {
+    list-style: none;
+}
+.btn-2 li a{
+    text-decoration: none;
+    color: #1a1a1c;
+}
+.explore-btn-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.explore-btn-content {
+    width: 408px;
+    height: 63px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px); /* for Safari */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.explore-btn-content h3 {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: 25px;
+}
+.explore-btn-content h3 li {
+    list-style: none;
+}
+.explore-btn-content h3 li a {
+    color: #fff;
+}
+
+
+
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0;
+    }
+    to {
+        opacity: 100;
+        scale: 1;
+    }
+}
